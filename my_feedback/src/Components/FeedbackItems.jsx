@@ -4,13 +4,13 @@ import {FaTimes} from "react-icons/fa"
 
 function FeedbackItems({item,handleDelete}) {
   return ( 
-    <Card>
+    <Card reverse={true}>
     
-     <div className='num-dislay'> Rating :{item.rating}</div>
+     <div className='num-dislay'> {item.rating}</div>
      <button className="close"onClick={() => handleDelete(item.id)}>
         <FaTimes color='purple '/>
      </button >
-     <div className='text-display'> Text :{item.text}</div>
+     <div className='text-display'>{item.text}</div>
     </Card>
   )
 }

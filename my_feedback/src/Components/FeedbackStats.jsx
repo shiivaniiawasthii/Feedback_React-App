@@ -14,7 +14,7 @@ function FeedbackStats({FeedbackCal}) {
         },0)/FeedbackCal.length
         console.log(Math.floor(average));
   return (
-    <div>
+    <div className='feedback-stats'>
       <h3>Average-Rating: {isNaN(average)?0: average}</h3>
       <h3>Review: {FeedbackCal.length}</h3>
 
